@@ -4,7 +4,7 @@ This repository hosts a GitHub Pages download page for the HighTac AI Android AP
 
 - Website: https://durovamotor.github.io/high-tac-ai-apk/
 - APK: `downloads/HighTac-AI.apk`
-- Size: 20.33 MB
-- SHA-256: `8AD20D89A2783DF6FF1E13A3897F84030A751101F6603082DCA029B4F42BE91C`
+- Size: 20.93 MB
+- SHA-256: `0614C03B0106E8FE63E730E91D36EB2A0FDD8B294A78D22B99C8BA7AF9A97BE7`
 
 The GitHub Pages site is served from the root of the `main` branch.
