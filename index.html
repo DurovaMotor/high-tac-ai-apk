@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Download the HighTac AI Android APK.">
+    <title>HighTac AI APK Download</title>
+    <link rel="icon" href="assets/app-icon.webp" type="image/webp">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #172033;
+        --muted: #667085;
+        --line: #d8dee9;
+        --paper: #f7f8fb;
+        --panel: #ffffff;
+        --accent: #e72228;
+        --accent-dark: #b9151d;
+        --blue: #134ac7;
+        --green: #12805c;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          linear-gradient(120deg, rgba(19, 74, 199, 0.12), transparent 42%),
+          linear-gradient(300deg, rgba(231, 34, 40, 0.10), transparent 36%),
+          var(--paper);
+      }
+
+      main {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 38px 0 28px;
+      }
+
+      .hero {
+        min-height: calc(100vh - 66px);
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
+        align-items: center;
+        gap: clamp(28px, 6vw, 78px);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 34px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .brand img {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        box-shadow: 0 10px 28px rgba(19, 74, 199, 0.20);
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        font-size: clamp(3rem, 8vw, 6.7rem);
+        line-height: 0.92;
+        letter-spacing: 0;
+      }
+
+      .intro {
+        max-width: 620px;
+        margin: 26px 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 2vw, 1.22rem);
+        line-height: 1.65;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        margin-top: 34px;
+      }
+
+      .download {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 52px;
+        padding: 0 22px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 800;
+        text-decoration: none;
+        box-shadow: 0 16px 32px rgba(231, 34, 40, 0.26);
+        transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+      }
+
+      .download:hover {
+        background: var(--accent-dark);
+        transform: translateY(-1px);
+        box-shadow: 0 20px 38px rgba(231, 34, 40, 0.30);
+      }
+
+      .download:focus-visible {
+        outline: 3px solid rgba(231, 34, 40, 0.26);
+        outline-offset: 3px;
+      }
+
+      .download svg {
+        width: 21px;
+        height: 21px;
+        flex: 0 0 auto;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 0.96rem;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .preview {
+        align-self: center;
+        justify-self: center;
+        width: min(100%, 390px);
+        aspect-ratio: 1 / 1.35;
+        position: relative;
+        display: grid;
+        place-items: center;
+      }
+
+      .phone {
+        width: min(82vw, 318px);
+        aspect-ratio: 9 / 16;
+        border: 12px solid #171b24;
+        border-radius: 38px;
+        background: #05070d;
+        box-shadow: 0 34px 80px rgba(23, 32, 51, 0.28);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .phone::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        width: 74px;
+        height: 18px;
+        border-radius: 999px;
+        background: #111620;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+
+      .phone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .file-panel {
+        margin-top: 18px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.76);
+      }
+
+      .file-panel dl {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 86px minmax(0, 1fr);
+        gap: 10px 14px;
+        font-size: 0.95rem;
+      }
+
+      .file-panel dt {
+        color: var(--muted);
+      }
+
+      .file-panel dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      }
+
+      footer {
+        color: var(--muted);
+        font-size: 0.9rem;
+        padding: 10px 0 24px;
+      }
+
+      @media (max-width: 760px) {
+        main {
+          width: min(100% - 24px, 640px);
+          padding-top: 24px;
+        }
+
+        .hero {
+          min-height: auto;
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+
+        .brand {
+          margin-bottom: 24px;
+        }
+
+        h1 {
+          font-size: clamp(2.6rem, 16vw, 4.2rem);
+        }
+
+        .preview {
+          order: -1;
+          width: min(100%, 330px);
+          margin: 0 auto;
+        }
+
+        .phone {
+          width: min(78vw, 250px);
+          border-width: 10px;
+          border-radius: 32px;
+        }
+
+        .file-panel dl {
+          grid-template-columns: 1fr;
+          gap: 4px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-label="HighTac AI download">
+        <div class="copy">
+          <div class="brand">
+            <img src="assets/app-icon.webp" alt="" aria-hidden="true">
+            <span>HighTac AI</span>
+          </div>
+          <h1>HighTac AI APK</h1>
+          <p class="intro">
+            Download the Android package directly from this official GitHub Pages mirror.
+            Keep the APK hash below for integrity checks after downloading.
+          </p>
+          <div class="actions">
+            <a class="download" href="downloads/HighTac-AI.apk" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12"></path>
+                <path d="m7 10 5 5 5-5"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+              Download APK
+            </a>
+            <div class="meta" aria-label="File details">
+              <span class="pill">20.33 MB</span>
+              <span class="pill">Android APK</span>
+              <span class="pill">Updated Jun 8, 2026</span>
+            </div>
+          </div>
+          <div class="file-panel">
+            <dl>
+              <dt>File</dt>
+              <dd>HighTac-AI.apk</dd>
+              <dt>SHA-256</dt>
+              <dd>8AD20D89A2783DF6FF1E13A3897F84030A751101F6603082DCA029B4F42BE91C</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="preview" aria-hidden="true">
+          <div class="phone">
+            <img src="assets/splash-hightac.png" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <main>
+        HighTac AI APK download hosted with GitHub Pages.
+      </main>
+    </footer>
+  </body>
+</html>
