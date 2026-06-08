@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Download the HighTac AI Android APK.">
-    <title>HighTac AI APK Download</title>
+    <meta name="description" content="下载 HighTac AI 安卓安装包。">
+    <title>HighTac AI 安卓安装包下载</title>
     <link rel="icon" href="assets/app-icon.webp" type="image/webp">
     <style>
       :root {
@@ -72,6 +72,7 @@
         font-size: clamp(3rem, 8vw, 6.7rem);
         line-height: 0.92;
         letter-spacing: 0;
+        overflow-wrap: anywhere;
       }
 
       .intro {
@@ -80,6 +81,7 @@
         color: var(--muted);
         font-size: clamp(1rem, 2vw, 1.22rem);
         line-height: 1.65;
+        overflow-wrap: anywhere;
       }
 
       .actions {
@@ -230,6 +232,7 @@
         .copy {
           display: flex;
           flex-direction: column;
+          width: 100%;
           min-width: 0;
           max-width: 100%;
         }
@@ -273,6 +276,9 @@
 
         .copy h1 {
           order: 3;
+          width: 100%;
+          max-width: 100%;
+          word-break: break-word;
         }
 
         h1 {
@@ -281,11 +287,15 @@
 
         .intro {
           order: 4;
+          width: 100%;
+          max-width: 100%;
           margin-top: 18px;
+          word-break: break-word;
         }
 
         .file-panel {
           order: 5;
+          width: 100%;
           min-width: 0;
           max-width: 100%;
         }
@@ -311,16 +321,16 @@
   </head>
   <body>
     <main>
-      <section class="hero" aria-label="HighTac AI download">
+      <section class="hero" aria-label="HighTac AI 下载">
         <div class="copy">
           <div class="brand">
             <img src="assets/app-icon.webp" alt="" aria-hidden="true">
             <span>HighTac AI</span>
           </div>
-          <h1>HighTac AI APK</h1>
+          <h1>HighTac AI 安卓安装包</h1>
           <p class="intro">
-            Download the Android package directly from this official GitHub Pages mirror.
-            Keep the APK hash below for integrity checks after downloading.
+            官方下载安卓安装包。<br>
+            下载后可用校验值确认完整性。
           </p>
           <div class="actions">
             <a class="download" href="HighTac-AI.apk" download>
@@ -329,17 +339,17 @@
                 <path d="m7 10 5 5 5-5"></path>
                 <path d="M5 21h14"></path>
               </svg>
-              Download APK
+              下载安装包
             </a>
-            <div class="meta" aria-label="File details">
+            <div class="meta" aria-label="文件信息">
               <span class="pill">20.79 MB</span>
-              <span class="pill">Android APK</span>
-              <span class="pill">Updated Jun 8, 2026</span>
+              <span class="pill">安卓安装包</span>
+              <span class="pill">2026年6月8日更新</span>
             </div>
           </div>
           <div class="file-panel">
             <dl>
-              <dt>File</dt>
+              <dt>文件</dt>
               <dd>HighTac-AI.apk</dd>
               <dt>SHA-256</dt>
               <dd>FB9655BCA46FA64228320F191C18A58BC1AC0394C4318806995B570A5ED3AA69</dd>
@@ -355,7 +365,7 @@
     </main>
     <footer>
       <main>
-        HighTac AI APK download hosted with GitHub Pages.
+        HighTac AI 安卓安装包下载页。
       </main>
     </footer>
   </body>
